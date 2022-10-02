@@ -1,0 +1,19 @@
+.studio-open-modal-btn {
+  font-family: inherit;
+  @include font(16px, 700, 30px);
+  letter-spacing: 0.06em;
+  background-color: var(--logo-accent-color);
+  color: var(--text-dark-theme-primary-color);
+  cursor: pointer;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition-duration-function),
+    color var(--transition-duration-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--text-dark-theme-primary-color);
+    color: var(--logo-accent-color);
+  }
+}

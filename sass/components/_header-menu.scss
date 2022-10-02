@@ -1,0 +1,42 @@
+.menu {
+  display: none;
+}
+
+// .menu {
+//   display: flex;
+//   align-items: center;
+//   column-gap: 50px;
+// }
+
+// .menu__item {
+//   position: relative;
+// }
+
+// .menu__link {
+//   font-weight: 500;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: inherit;
+//   transition: color var(--transition-duration-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--logo-accent-color);
+//   }
+
+//   &.menu__link_current::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     bottom: -33px;
+//     left: 0;
+//     width: 100%;
+//     height: 4px;
+//     border-radius: 2px;
+//     background-color: var(--logo-accent-color);
+//   }
+
+//   &.link.menu__link_current {
+//     color: var(--logo-accent-color);
+//   }
+// }

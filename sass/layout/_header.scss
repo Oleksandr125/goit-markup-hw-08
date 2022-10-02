@@ -1,0 +1,32 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.open-mobile-menu-btn {
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.open-mobile-menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+
+// .header {
+//   background-color: var(--background-secondary-color);
+//   border-bottom: 1px solid var(--header-line-color);
+// }
+
+// .header__container {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .navigation {
+//   display: flex;
+//   align-items: center;
+// }

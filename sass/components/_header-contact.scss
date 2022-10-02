@@ -1,0 +1,36 @@
+.header-contact {
+  display: none;
+}
+
+// .header-contact {
+//   display: flex;
+//   align-items: center;
+//   column-gap: 50px;
+//   margin-left: auto;
+// }
+
+// .header-contact__link {
+//   display: flex;
+//   align-items: center;
+//   column-gap: 10px;
+//   font-weight: 500;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: var(--text-light-theme-secondary-color);
+//   transition: color var(--transition-duration-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--logo-accent-color);
+//   }
+// }
+
+// .header-contact__icon {
+//   fill: var(--text-light-theme-secondary-color);
+//   transition: fill var(--transition-duration-function);
+
+//   .header-contact__link:hover &,
+//   .header-contact__link:focus & {
+//     fill: var(--logo-accent-color);
+//   }
+// }

@@ -1,0 +1,34 @@
+.activities {
+  background-color: var(--background-secondary-color);
+  padding-top: 0;
+}
+
+.activities-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-activity-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities-img-wrapper {
+  position: relative;
+}
+
+.activities-overlay {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  @include font(14px, 700, 16px);
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--text-dark-theme-primary-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
