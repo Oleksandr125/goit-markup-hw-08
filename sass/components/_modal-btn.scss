@@ -5,7 +5,7 @@
   background-color: var(--logo-accent-color);
   color: var(--text-dark-theme-primary-color);
   cursor: pointer;
-  padding: 10px 32px;
+  padding: 10px 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color var(--transition-duration-function),
@@ -15,5 +15,11 @@
   &:focus {
     background-color: var(--text-dark-theme-primary-color);
     color: var(--logo-accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .studio-open-modal-btn {
+    padding: 10px 32px;
   }
 }

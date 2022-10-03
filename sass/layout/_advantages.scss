@@ -9,21 +9,23 @@
 
 .studio-advantage-items {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .advantage-item {
-  width: 270px;
+  width: 450px;
 }
 
 .studio-advantage-headline {
   @include font(14px, 700, 16px);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .studio-advantage-text {
-  line-height: 1.71;
+  @include font(14px, 400, 24px);
   color: var(--text-light-theme-secondary-color);
 }
 
@@ -31,9 +33,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--background-menu-color);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .studio-advantage-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .advantage-item {
+    width: 354px;
+  }
+
+  .studio-advantage-headline {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-item {
+    width: 270px;
+  }
 }

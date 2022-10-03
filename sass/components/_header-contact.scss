@@ -1,36 +1,77 @@
-.header-contact {
-  display: none;
+@media screen and (max-width: 767px) {
+  .header-contact {
+    display: none;
+  }
 }
 
-// .header-contact {
-//   display: flex;
-//   align-items: center;
-//   column-gap: 50px;
-//   margin-left: auto;
-// }
+@media screen and (min-width: 768px) {
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    margin-left: auto;
+  }
 
-// .header-contact__link {
-//   display: flex;
-//   align-items: center;
-//   column-gap: 10px;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   color: var(--text-light-theme-secondary-color);
-//   transition: color var(--transition-duration-function);
+  .header-contact__link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    @include font(12px, 500, 14px);
+    letter-spacing: 0.02em;
+    color: var(--text-light-theme-secondary-color);
+  }
 
-//   &:hover,
-//   &:focus {
-//     color: var(--logo-accent-color);
-//   }
-// }
+  .header-contact__icon_mail {
+    width: 14px;
+    height: 10px;
+  }
 
-// .header-contact__icon {
-//   fill: var(--text-light-theme-secondary-color);
-//   transition: fill var(--transition-duration-function);
+  .header-contact__icon_tel {
+    width: 10px;
+    height: 14px;
+  }
+}
 
-//   .header-contact__link:hover &,
-//   .header-contact__link:focus & {
-//     fill: var(--logo-accent-color);
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  .header-contact__link {
+    @include font(14px, 500, 16px);
+    column-gap: 10px;
+  }
+
+  .header-contact__icon_mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  .header-contact__icon_tel {
+    width: 10px;
+    height: 16px;
+  }
+
+  .header-contact__link {
+    color: var(--text-light-theme-secondary-color);
+    transition: color var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+      color: var(--logo-accent-color);
+    }
+  }
+
+  .header-contact__icon {
+    fill: var(--text-light-theme-secondary-color);
+    transition: fill var(--transition-duration-function);
+
+    .header-contact__link:hover &,
+    .header-contact__link:focus & {
+      fill: var(--logo-accent-color);
+    }
+  }
+}
