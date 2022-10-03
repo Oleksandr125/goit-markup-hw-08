@@ -1080,10 +1080,13 @@ button {
 .footer-contact__link {
   font-style: normal;
   line-height: 1.71;
+}
+
+.footer-contact__link_color_grey {
   color: var(--text-footer-contact-color);
 }
 
-.footer-contact__link_special_color {
+.footer-contact__link_color_white {
   color: var(--text-dark-theme-primary-color);
 }
 
@@ -1166,11 +1169,18 @@ button {
 .footer-contact {
     align-items: flex-start;
   }
-  .footer-contact__link {
+  .footer-contact__link_color_grey {
     color: var(--text-footer-contact-color);
     transition: color var(--transition-duration-function);
   }
-  .footer-contact__link:hover, .footer-contact__link:focus {
+  .footer-contact__link_color_grey:hover, .footer-contact__link_color_grey:focus {
+    color: var(--logo-accent-color);
+  }
+  .footer-contact__link_color_white {
+    color: var(--text-dark-theme-primary-color);
+    transition: color var(--transition-duration-function);
+  }
+  .footer-contact__link_color_white:hover, .footer-contact__link_color_white:focus {
     color: var(--logo-accent-color);
   }
   .footer-social-wrapper__social-link {
